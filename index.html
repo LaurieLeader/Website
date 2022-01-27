@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Laurie Leader</title>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/25cf67dd46.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <section class="newspaper-section" id="title">
+    <img class="title-image" src="images/newspaper.jpeg" alt="cover-photo">
+    <div class="container-fluid">
+
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg">
+
+        <a class="navbar-brand icon-photo" href="index.html">
+          <img class="icon-image" src="images/logo.png" alt="icon-photo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="issues/allissues.html">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Clubs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Submit</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="big-heading">Laurie Leader.</h1>
+          <h2 class="subtext">A Newsletter For Life.</h2>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Issues -->
+
+  <section class="white-section" id="issues">
+    <div class="col-lg-12">
+      <h1 class="section-text">OUR PUBLISHED ISSUES</h2>
+    </div>
+    <div class="row dog-row">
+      <div class="neat col-lg-4 col-md-6">
+        <a href="issues/issue1.html" class="nav-link">
+          <div class="big-padding issueodd outline">
+            Issue 1
+          </div>
+        </a>
+      </div>
+      <div class="neat col-lg-4 col-md-6">
+        <a href="issues/issue1.html" class="nav-link">
+          <div class="big-padding issueeven outline">
+            Issue 2
+          </div>
+        </a>
+      </div>
+      <div class="neat col-lg-4 col-md-6">
+        <a href="issues/issue1.html" class="nav-link">
+          <div class="big-padding issueodd outline">
+            Issue 3
+          </div>
+        </a>
+      </div>
+      <div class="neat col-lg-4 col-md-6">
+        <a href="issues/issue1.html" class="nav-link">
+          <div class="big-padding issueeven outline">
+            Issue 4
+          </div>
+        </a>
+      </div>
+      <div class="neat col-lg-4 col-md-6">
+        <a href="issues/issue1.html" class="nav-link">
+          <div class="big-padding issueodd outline">
+            Issue 5
+          </div>
+        </a>
+      </div>
+      <div class="neat col-lg-4 col-md-6">
+        <a href="issues/issue1.html" class="nav-link">
+          <div class="big-padding issueeven outline">
+            More...
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+
+    </div>
+
+  </section>
+
+  <!-- Featured Articles -->
+
+  <section class="coloured-section" id="testimonials">
+    <img class="carousel-image" src="images/news-stack.jpg" alt="stack-photo">
+    <div class="col-lg-12">
+      <h1 class="section-text" id="carousel-text">FEATURED ARTICLES</h2>
+    </div>
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+
+      <ol class="carousel-indicators">
+        <a id="heart-button" class="carousel-control-play heart-button">
+          <i id="heart-icon" class="bi-suit-heart" onclick="heartFunction()"></i>
+        </a>
+        <a class="carousel-control-prev active" href="#testimonial-carousel" role="button" data-slide="prev">
+          <i class="bi bi-skip-backward-fill" onclick="unheartFunction()"></i>
+        </a>
+        <a class="play-button carousel-control-play" href="issues/issue1.html">
+          <i class="bi bi-play-fill"></i>
+        </a>
+        <a class="carousel-control-next active" href="#testimonial-carousel" role="button" data-slide="next">
+          <i class="bi bi-skip-forward-fill" onclick="unheartFunction()"></i>
+        </a>
+        <a class="carousel-control-play music-button active" href="issues/issue1.html" role="button" data-slide="next">
+          <i class="bi bi-music-note-list"></i>
+        </a>
+        <script>
+          function heartFunction() {
+            document.getElementById("heart-icon").className = "bi-suit-heart-fill"
+          }
+
+          function unheartFunction() {
+            document.getElementById("heart-icon").className = "bi-suit-heart"
+          }
+        </script>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="issues/issue1.html">
+          <img class="feature-image" src="images/album.png" alt="feature-photo">
+          </a>
+          <h3 class="testimonial-text">Letter from the Editors</h3>
+          <em>The Editors</em>
+
+        </div>
+        <div class="carousel-item">
+          <a href="issues/issue1/australia-day.html">
+          <img class="feature-image" src="images/album.png" alt="feature-photo">
+          </a>
+          <h3 class="testimonial-text">Australia Day and the Alternatives</h3>
+          <em>Anonymous</em>
+
+        </div>
+
+        <div class="carousel-item">
+          <a href="issues/issue1.html">
+          <img class="feature-image" src="images/album.png" alt="feature-photo">
+          </a>
+          <h3 class="testimonial-text">5 Cool Back 2 Skool Tips</h3>
+          <em>School Captains</em>
+
+        </div>
+      </div>
+      <div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--  -->
+
+  <section class="pink-section" id="hint">
+    <div class="col-lg-12 hint">
+      <h1 class="section-text">HINT FOR NEXT ISSUE</h2>
+        <h3 class="testimonial-text">Starts in summer, yet sounds so cool </h3>
+        <h3 class="testimonial-text">You know it, you love it, it's...</h3>
+
+    </div>
+
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+
+      <div class="pricing-column col-lg-4 col-md-6">
+
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-outline-dark btn-block">Sign Up</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-dark btn-block">Sign Up</button>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-dark btn-block">Sign Up</button>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="coloured-section" id="cta">
+
+    <h3 class="final-note">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="download-button btn btn-dark btn-lg"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="download-button btn btn-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+
+    <p>
+      <i class="end-icon fab fa-twitter"></i>
+      <i class="end-icon fab fa-facebook-f"></i>
+      <i class="end-icon fab fa-instagram"></i>
+      <i class="end-icon fas fa-envelope"></i>
+    </p>
+
+    <p class="copyright">Made with love by Ally Detering ❤️</p>
+    <p class="copyright">PS: there are a few easter eggs in the site -> see if you can find them all!</p>
+
+
+
+  </footer>
+
+</body>
+
+</html>
